@@ -80,6 +80,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 18px;
+    transition: 0.7s;
 }
 
 .active.alert-container {
