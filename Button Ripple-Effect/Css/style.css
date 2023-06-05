@@ -1,0 +1,44 @@
+body {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: aliceblue;
+    font-family: sans-serif;
+}
+
+.btn {
+    position: relative;
+    background-color: pink;
+    font-size: 22px;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    color: black;
+    overflow: hidden;
+}
+
+.btn::before {
+    position: absolute;
+    content: "";
+    background-color: rgba(255, 69, 0, 0.8);
+    width: 0px;
+    height: 0px;
+    left: var(--posX);
+    top: var(--posY);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: width 0.3s, height 0.3s;
+}
+
+.btn span {
+    position: relative;
+    z-index: 1;
+}
+
+.btn:hover::before {
+    width: 300px;
+    height: 300px;
+}
