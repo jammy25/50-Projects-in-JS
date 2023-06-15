@@ -3,4 +3,5 @@ body {
     background-color: salmon;
     display: flex;
     width: 100vh;
+    justify-content: center;
 }
